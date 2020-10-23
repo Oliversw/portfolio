@@ -2,7 +2,9 @@ import { createGlobalStyle } from 'styled-components'
 
 const GlobalStyle = createGlobalStyle`
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* CSS Reset Begin ----------------------------------------------------------------------------------- */
+
+/* from http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -51,7 +53,7 @@ table {
 	border-spacing: 0;
 }
 
-/* CSS Reset End */
+/* CSS Reset End ----------------------------------------------------------------------------------- */
 
 /* Import Google Fonts (currently Roboto Condensed only) */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&display=swap');
@@ -73,7 +75,7 @@ table {
     }
 
     section {
-
+      min-height: 100vh;
     }
 
     h1 {
