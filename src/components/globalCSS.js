@@ -68,6 +68,7 @@ table {
     body {
         font-family: 'Roboto Condensed', sans-serif;
         letter-spacing: 0.1em;
+        padding: 1rem;
     }
 
     main {

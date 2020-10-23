@@ -1,42 +1,24 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const SiteHeader = styled.header`
+  min-height: 100vh;
+`
+
+const SpanSlight = styled.span`
+  color: var(--black);
+  text-transform: lowercase;
+  display: block;
+  font-weight: 600;
+  font-size: 1.8rem;
+`
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
+  <SiteHeader>
+      <h1><SpanSlight>Hi, I'm </SpanSlight>Oliver. <SpanSlight>and I'm a professional circus artist turned </SpanSlight>Software Developer</h1>
+      <h2>Find out more:</h2>
+  </SiteHeader>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header
