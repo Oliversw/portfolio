@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components"
 
 const GlobalStyle = createGlobalStyle`
 
@@ -67,7 +67,8 @@ table {
 
     body {
         font-family: 'Roboto Condensed', sans-serif;
-        letter-spacing: 0.1em;
+        letter-spacing: 0.1rem;
+        line-height: 2.5rem;
         padding: 1rem;
     }
 
@@ -107,4 +108,4 @@ table {
     }
 `
 
-export default GlobalStyle;
+export default GlobalStyle
