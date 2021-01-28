@@ -5,10 +5,12 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Landing from "./landing.js"
+
 const IndexPage = () => (
   <Layout>
+    <Landing />
     <SEO title="Home" />
-    <h1>Software Developer</h1>
     <h2>My Work</h2>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
