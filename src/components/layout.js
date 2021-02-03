@@ -12,6 +12,7 @@ import GlobalStyle from "./globalCSS"
 
 import Header from "./header"
 // import "./layout.css"
+import Burger from "./menu/burger"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -28,6 +29,7 @@ const Layout = ({ children }) => {
     <>
       <GlobalStyle />
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Burger />
       <div
         style={{
           margin: `0 auto`,
